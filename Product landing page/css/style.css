@@ -24,6 +24,14 @@ body {
 a, a:visited, a:hover {
   text-decoration: none;
   font-size: 0.875rem;
+  font-weight: 600;
+  padding: 1rem 1.875rem;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+a:not(.header__logo):not(.header__menu), a:visited:not(.header__logo):not(.header__menu), a:hover:not(.header__logo):not(.header__menu) {
+  border: #FDFDFF 3px solid;
 }
 
 a:not(.button__cta), a:visited:not(.button__cta), a:hover:not(.button__cta) {
@@ -36,16 +44,10 @@ a:not(.button__cta), a:visited:not(.button__cta), a:hover:not(.button__cta) {
   display: flex;
 }
 
-.flex-jc-sb {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.flex-jc-c {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.flex-jc-fe {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .flex-ai-c {
@@ -56,19 +58,18 @@ a:not(.button__cta), a:visited:not(.button__cta), a:hover:not(.button__cta) {
 
 .button__cta {
   background-color: #FDFDFF;
-  padding: 1rem 1.875rem;
-  border-radius: 100px;
-  cursor: pointer;
-  font-family: "Roboto", Helvetica, sans-serif;
+  color: #DF8698;
   font-weight: 700;
 }
 
 .button__cta:hover {
   background-color: #DF8698;
   color: #FDFDFF;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
-@media (min-width: 63.9375em) {
+@media (max-width: 63.9375em) {
   .hide-for-mobile {
     display: none;
   }
@@ -83,6 +84,10 @@ a:not(.button__cta), a:visited:not(.button__cta), a:hover:not(.button__cta) {
 .header nav {
   padding: 15px;
   background-color: #DF8698;
+}
+
+.header__logo {
+  margin-right: auto;
 }
 
 .header__logo img {
@@ -104,5 +109,6 @@ a:not(.button__cta), a:visited:not(.button__cta), a:hover:not(.button__cta) {
 
 .header__links a {
   font-size: 0.875rem;
+  margin-right: 30px;
 }
 /*# sourceMappingURL=style.css.map */

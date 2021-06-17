@@ -26,6 +26,14 @@ body {
 a, a:visited, a:hover {
     text-decoration: none;
     font-size: $font-sm;
+    font-weight: 600;
+    padding: 1rem 1.875rem;
+    border-radius: 100px;
+    cursor: pointer;
+
+    &:not(.header__logo):not(.header__menu) {
+        border: $white 3px solid;
+    }
 
     &:not(.button__cta) {
         color: $white;
@@ -36,12 +44,8 @@ a, a:visited, a:hover {
 .flex {
     display: flex;
     
-    &-jc-sb {
-        justify-content: space-between;
-    }
-
-    &-jc-c {
-        justify-content: center;
+    &-jc-fe {
+        justify-content: flex-end;
     }
 
     &-ai-c {
@@ -52,16 +56,14 @@ a, a:visited, a:hover {
 // Buttons
 .button__cta {
     background-color: $white;
-    padding: 1rem 1.875rem;
-    border-radius: 100px;
-    cursor: pointer;
-    font-family: "Roboto", Helvetica, sans-serif;
+    color: $perfectPink;
     font-weight: 700;
 }
 
 .button__cta:hover {
     background-color: $perfectPink;
     color: $white;
+    transition: all 0.3s ease 0s;
 }
 
 // Responsivity

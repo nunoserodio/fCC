@@ -6,6 +6,8 @@
     }
 
     &__logo {
+        margin-right: auto;
+        
         img {
             width: 8.8rem;
             height: 2.52rem;
@@ -32,6 +34,7 @@
     &__links {
         a {
             font-size: $font-sm;
+            margin-right: 30px;
         }
     }
 }
