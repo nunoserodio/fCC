@@ -5,20 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MACRA.ME</title>
+
+    <!-- Accent Google Fonts. -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- To load CSS. -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header id="header">
-        <!---------- NAV BAR ---------->
-        <nav id="nav-bar">
-            <a href="bio" id="nav-link">Bio</a>
-            <a href="product" id="nav-link">Product</a>
-            <a href="contact" id="nav-link">Contact</a>
-        </nav>
+    <header id="header" class="header">
+        <nav id="nav-bar" class="flex flex-jc-sb flex-ai-c">
+            <a href="/" class="header__logo">
+                <img src="images/mini-logo.jpeg" alt="MACRA.ME" id="header-img">
+            </a>
 
-        <!---------- LOGO ---------->
-        <img src="images\logo.jpeg" alt="Brand logo" id="header-img">
+            <a href="#" class="header__menu hide-for-desktop">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+            <div class="header__links hide-for-mobile">
+                <a href="#" class="nav-link">Bio</a>
+                <a href="#" class="nav-link">Gallery</a>
+                <a href="#" class="nav-link">Social</a>
+            </div>
+
+            <a href="#" class="button__cta hide-for-mobile">Contact</a>
+        </nav>
     </header>
 
     <!---------- BIO (ADD PICTURE) ---------->
@@ -27,12 +45,13 @@
     <p>Lisbon-based artist with a passion for weaving thread and Home Decor. Creator of hand-made, functional pieces.
     </p>
 
-    <!---------- PRODUCT ---------->
-    <h2 id="product">Product</h2>
+    <!---------- GALLERY ---------->
+    <h2 id="gallery">Gallery</h2>
 
     <!---------- CONTACT ---------->
-    <h2 id="contact">Contact</h2>
+    <h2 id="social">Social</h2>
 
+    <!-- To load JavaScript file. -->
     <script src="app/js/script.js"></script>
 </body>
 </html>
