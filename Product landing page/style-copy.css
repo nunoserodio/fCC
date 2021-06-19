@@ -1,0 +1,138 @@
+:root {
+  /* ========== Colors ========== */
+  --van-dyke-brown: #644536;
+  --barbie-pink: #DF8698;
+  --pastel-pink: #E2ACAA;
+  --white: #FDFDFF;
+
+  /* ========== Fonts ========== */
+  --font-sm: 0.875rem; /* 14px */
+  --font-med: 1.125rem; /* 18px */
+}
+
+html {
+  /* Text will be 100% of the base font size set in the browser. Allows users to control it with zoom. Most browsers default to a 16px.*/
+  font-size: 100%;
+
+  /* Prevents containers with padding from growing. */
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-weight: 400;
+  color: var(--white);
+  background-color: var(--barbie-pink);
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+a:not(.button-cta), a:visited:not(.button-cta), a:hover:not(.button-cta) {
+  color: var(--white);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-jc-fe {
+  justify-content: flex-end;
+}
+
+.flex-ai-c {
+  align-items: center;
+}
+
+/* ========== NAV BAR ========== */
+nav {
+  padding: 12px;
+  background-color: var(--pastel-pink);
+  box-shadow: 0 0 0.5em var(--van-dyke-brown);
+}
+
+.nav-link {
+  font-size: var(--font-sm);
+  font-weight: 400;
+  padding: 0.8rem 1.875rem;
+  border-radius: 100px;
+  border: var(--white) 2px solid;
+  cursor: pointer;
+}
+
+.nav-link:not(.button__cta) {
+  margin-right: 30px;
+}
+
+.nav-link:hover {
+  box-shadow: 0 0 1.5em 0 var(--white) inset;
+}
+
+.button-cta {
+  background-color: var(--white);
+  color: var(--pastel-pink);
+  font-weight: 800;
+}
+
+.button-cta:hover {
+  background-color: var(--barbie-pink);
+  color: var(--white);
+  transition: all 200ms ease-in 0s;
+}
+
+.header-logo {
+  margin-right: auto;
+}
+
+.header-logo img {
+  width: 8.8rem;
+  height: 2.52rem;
+}
+
+/* ========== HAMBURGER MENU ========== */
+.header-menu span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: var(--white);
+  border-radius: 100px;
+  transition: all 300ms ease-in 0s;
+  transform-origin: 2.5px 1px;
+}
+
+.header-menu span:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.header-menu.open > span:first-child {
+  transform: rotate(45deg);
+}
+
+.header-menu.open > span:nth-child(2) {
+  opacity: 0;
+}
+
+.header-menu.open > span:last-child {
+  transform: rotate(-45deg);
+}
+
+/* ========== RESPONSIVENESS ========== */
+@media (max-width: 48em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 48em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}

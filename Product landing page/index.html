@@ -6,36 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MACRA.ME</title>
 
-    <!-- Accent Google Fonts. -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
     <!-- To load CSS. -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style-copy.css">
 </head>
 
 <body>
     <header id="header" class="header">
+        <div class="overlay"></div>
+
+        <!---------- NAV BAR ---------->
         <nav id="nav-bar" class="flex flex-jc-fe flex-ai-c">
-            <a href="/" class="header__logo">
+            <a href="/" class="header-logo">
                 <img src="images/mini-logo.jpeg" alt="MACRA.ME" id="header-img">
             </a>
 
-            <a href="#" class="header__menu hide-for-desktop">
+            <a href="#" id ="hamburger" class="header-menu hide-for-desktop">
                 <span></span>
                 <span></span>
                 <span></span>
             </a>
 
-            <div class="header__links hide-for-mobile">
+            <div class="header-links hide-for-mobile">
                 <a href="#" class="nav-link">Bio</a>
                 <a href="#" class="nav-link">Gallery</a>
                 <a href="#" class="nav-link">Social</a>
             </div>
 
-            <a href="#" class="button__cta hide-for-mobile">Contact</a>
+            <a href="#" class="nav-link button-cta hide-for-mobile">Contact</a>
         </nav>
     </header>
 
