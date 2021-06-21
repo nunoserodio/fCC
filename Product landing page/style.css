@@ -1,13 +1,15 @@
+/* ========== GLOBALS ========== */
+
 :root {
-  /* ========== Colors ========== */
   --van-dyke-brown: #644536;
   --barbie-pink: #DF8698;
   --pastel-pink: #E2ACAA;
   --white: #FDFDFF;
 
-  /* ========== Fonts ========== */
   --font-sm: 0.875rem; /* 14px */
   --font-med: 1.125rem; /* 18px */
+  --font-lrg: 2.5rem; /* 40px */
+  --font-super: 3.25rem; /* 52px */
 }
 
 html {
@@ -26,10 +28,20 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.3;
-  font-family: "Roboto", Helvetica, sans-serif;
+  font-family: "Montserrat", Helvetica, sans-serif;
   font-weight: 400;
   color: var(--white);
-  background-color: var(--barbie-pink);
+  background: url("../images/logo-pattern.png");
+}
+
+h1 {
+  font-family: "Amatic SC", Helvetica, sans-serif;
+  font-size: var(--font-super);
+}
+
+.accent-text {
+  font-family: "Amatic SC", Helvetica, sans-serif;
+  font-size: var(--font-lrg);
 }
 
 a, a:visited, a:hover {
@@ -52,7 +64,12 @@ a:not(.button-cta), a:visited:not(.button-cta), a:hover:not(.button-cta) {
   align-items: center;
 }
 
+hr {
+  width: 80%;
+}
+
 /* ========== NAV BAR ========== */
+
 nav {
   padding: 12px;
   background-color: var(--pastel-pink);
@@ -62,9 +79,9 @@ nav {
 .nav-link {
   font-size: var(--font-sm);
   font-weight: 400;
-  padding: 0.8rem 1.875rem;
+  padding: 0.7rem 1.875rem;
   border-radius: 100px;
-  border: var(--white) 2px solid;
+  border: var(--white) 1.5px solid;
   cursor: pointer;
 }
 
@@ -73,7 +90,8 @@ nav {
 }
 
 .nav-link:hover {
-  box-shadow: 0 0 1.5em 0 var(--white) inset;
+  box-shadow: 0 0 0.5em 0 var(--white) inset;
+  transition: all 100ms ease-in 0s;
 }
 
 .button-cta {
@@ -83,7 +101,7 @@ nav {
 }
 
 .button-cta:hover {
-  background-color: var(--barbie-pink);
+  background-color: var(--pastel-pink);
   color: var(--white);
   transition: all 200ms ease-in 0s;
 }
@@ -98,6 +116,7 @@ nav {
 }
 
 /* ========== HAMBURGER MENU ========== */
+
 .header-menu span {
   display: block;
   width: 25px;
@@ -112,19 +131,8 @@ nav {
   margin-bottom: 5px;
 }
 
-.header-menu.open > span:first-child {
-  transform: rotate(45deg);
-}
-
-.header-menu.open > span:nth-child(2) {
-  opacity: 0;
-}
-
-.header-menu.open > span:last-child {
-  transform: rotate(-45deg);
-}
-
 /* ========== RESPONSIVENESS ========== */
+
 @media (max-width: 48em) {
   .hide-for-mobile {
     display: none;
@@ -135,4 +143,59 @@ nav {
   .hide-for-desktop {
     display: none;
   }
+}
+
+/* ========== BIO ========== */
+
+.bio {
+  width: 100%;
+  height: 100vh;
+  background: url("/images/bio-accent.jpeg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+.bio-container:hover {
+  clip-path: circle(75%);
+}
+
+.bio-container {
+  background-color: var(--pastel-pink);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  clip-path: circle(13.5vw at 50% 50%);
+  transition: clip-path .5s ease-in-out;
+}
+
+.bio-left {
+  width: 36%;
+  padding: 2rem;
+  align-self: center;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.bio-left h1 {
+  text-align: center;
+}
+
+.bio-logo {
+  background: url("./images/logo.jpeg") no-repeat center;
+  background-size: 100%;
+  width: 28%;
+}
+
+.bio-portrait {
+  background: url("./images/Portrait.jpeg") no-repeat center;
+  background-size: cover;
+  width: 36%;
+  box-shadow: 4rem 0 3rem var(--pastel-pink) inset;
+}
+
+/* ========== GALLERY ========== */
+
+.gallery {
+  background-color: var(--white);
 }

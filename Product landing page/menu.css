@@ -1,0 +1,13 @@
+/* Hamburger animations
+
+.header-menu.open > span:first-child {
+    transform: rotate(45deg);
+}
+
+.header-menu.open > span:nth-child(2) {
+    opacity: 0;
+}
+
+.header-menu.open > span:last-child {
+    transform: rotate(-45deg);
+}
