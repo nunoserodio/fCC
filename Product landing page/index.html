@@ -20,8 +20,9 @@
         <div class="overlay"></div>
 
         <!---------- NAV BAR ---------->
+
         <nav id="nav-bar" class="flex flex-jc-fe flex-ai-c">
-            <a href="/" class="header-logo">
+            <a href="#" class="header-logo">
                 <img src="images/mini-logo.jpeg" alt="MACRA.ME" id="header-img">
             </a>
 
@@ -34,8 +35,8 @@
 
             <div class="header-links hide-for-mobile">
                 <a href="#" class="nav-link">Bio</a>
-                <a href="#" class="nav-link">Gallery</a>
-                <a href="#" class="nav-link">Social</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#social" class="nav-link">Social</a>
             </div>
 
             <a href="#" class="nav-link button-cta hide-for-mobile">Contact</a>
@@ -43,28 +44,93 @@
     </header>
 
     <!---------- BIO ---------->
-    <div class="bio">
-        <div class="bio-container">
+
+    <div id="bio" class="bio">
+        <div class="bio-container hide-for-mobile">
             <div class="bio-left">
                 <h1>Tangled with love...</h1>
+                
+                <br>
                 <hr>
                 <br>
-                <h4><span class="accent-text">Joana Jacinto</span><br>is a Lisbon-based artist with a passion for knotting thread and Home Decor. She handcrafts elaborate Macramé pieces into funtional items and intricate geometric designs.</h4>
+
+                <h2>Joana Jacinto</h2>
+
+                <h4>
+                    is a Lisbon-based artist with a passion for knotting thread.
+                    <br>
+                    <br>
+                    She handcrafts elaborate Macramé pieces with intricate geometric designs and functional applications.
+                </h4>
             </div>
 
             <div class="bio-logo"></div>
-
+                
             <div class="bio-portrait"></div>
+        </div>
+
+        <div class="mobile-bio hide-for-desktop">
+            <h1>Tangled with love...</h1>
+                
+            <br>
+            <hr>
+            <br>
+
+            <h2>Joana Jacinto</h2>
+
+            <h4>
+                is a Lisbon-based artist with a passion for knotting thread.
+                <br>
+                <br>
+                She handcrafts elaborate Macramé pieces with intricate geometric designs and functional applications.
+            </h4>
         </div>
     </div>
 
     <!---------- GALLERY ---------->
+
     <section class="gallery">
-        <h2 id="gallery">Gallery</h2>
+        <h1><span id="gallery"></span>Gallery</h1>
+
+        <hr>
+        <br>
+        
+        <div class="gallery-dektop hide-for-mobile">
+            <img class="product-1" src="./images/vase.jpeg" alt="Vase hanger 1">
+            <img class="product-2" src="./images/strap.jpg" alt="String strap for glasses 1">
+            <img class="product-3" src="./images/vase2.jpg" alt="Vase hanger 2">
+            <img class="product-4" src="./images/frame.jpg" alt="Picture frame">
+            <img class="product-5" src="./images/purse.jpeg" alt="Purse">
+            <img class="product-6" src="./images/hanger.jpeg" alt="Wall hanger">
+        </div>
+
+        <div class="gallery-mobile hide-for-desktop">
+            <img src="./images/vase.jpeg" alt="Vase hanger 1">
+            <img src="./images/strap.jpg" alt="String strap for glasses 1">
+            <img src="./images/vase2.jpg" alt="Vase hanger 2">
+            <img src="./images/frame.jpg" alt="Picture frame">
+            <img src="./images/purse.jpeg" alt="Purse">
+            <img src="./images/hanger.jpeg" alt="Wall hanger">
+        </div>
     </section>
 
-    <!---------- CONTACT ---------->
-    <h2 id="social">Social</h2>
+    <!---------- VIDEO SECTION ---------->
+
+    <section class="video-section">
+        <div class="video-container">
+            <h1>Witness the process...</h1>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yJBlr9JOFzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!---------- SOCIAL ---------->
+    
+    <section class="social-section">
+    
+        <h2 id="social">Social</h2>
+
+    </section>
 
     <!-- To load JavaScript file.
     <script src="app/js/script.js"></script> -->
