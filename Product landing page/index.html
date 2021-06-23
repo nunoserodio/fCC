@@ -9,6 +9,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- To load CSS. -->
     <link rel="stylesheet" href="style.css">
@@ -39,7 +40,7 @@
                 <a href="#social" class="nav-link">Social</a>
             </div>
 
-            <a href="#" class="nav-link button-cta hide-for-mobile">Contact</a>
+            <a href="#contact" class="nav-link button-cta hide-for-mobile">Contact</a>
         </nav>
     </header>
 
@@ -114,23 +115,56 @@
         </div>
     </section>
 
-    <!---------- VIDEO SECTION ---------->
+    <!---------- SOCIAL SECTION ---------->
 
-    <section class="video-section">
-        <div class="video-container">
-            <h1>Witness the process...</h1>
+    <section class="social-section hide-for-mobile"><span id="social"></span>
+        <h1>Witness the process...<hr></h1>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/yJBlr9JOFzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="social-text">
+            <a target="_blank" href="https://www.instagram.com/macra._me/" class="fa fa-instagram"></a>
+
+            <p>Macramé is a form of textile produced using knotting cords made of cotton twine, linen, hemp, jute, leather or yarn.
+            <br>
+            <br>
+            Joana takes great care to create every piece she makes by hand. You can find her sharing her process in her social media page.</p>
+            <br>
         </div>
+
+        <iframe class="video-desktop" width="560" height="315" src="https://www.youtube.com/embed/yJBlr9JOFzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
-    <!---------- SOCIAL ---------->
-    
-    <section class="social-section">
-    
-        <h2 id="social">Social</h2>
+    <section class="social-section-mobile hide-for-desktop"><span id="social"></span>
+        <h1>Witness the process...<hr></h1>
 
+
+        <div class="social-text-mobile">
+            <a target="_blank" href="https://www.instagram.com/macra._me/" class="fa fa-instagram"></a>
+
+            <p>Macramé is a form of textile produced using knotting cords made of cotton twine, linen, hemp, jute, leather or yarn.
+            <br>
+            <br>
+            Joana takes great care to create every piece she makes by hand. You can find her sharing her process in her social media page.</p>
+            <br>
+        </div>
+
+        <iframe class="video-mobile" width="560" height="315" src="https://www.youtube.com/embed/yJBlr9JOFzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
+
+    <!---------- CONTACT SECTION ---------->
+
+    <section class="contact-section"><span id="contact"></span>
+        <form>
+            <label for="email">Subscribe to the<span> MACRA.ME </span>email feed!<input type="email" name="email" id="email" placeholder="Your email"></label>
+        </form>
+    </section>
+
+    <footer>
+        <h6>&copy; Web Design by <a target="_blank" href="https://github.com/nunoserodio">Nuno</a>
+        <br>
+        &copy; Product by Joana Jacinto
+        <br>
+        &copy; Logo Design by Nuno Coelho</h6>
+    </footer>
 
     <!-- To load JavaScript file.
     <script src="app/js/script.js"></script> -->
