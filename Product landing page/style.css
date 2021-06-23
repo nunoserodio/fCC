@@ -8,7 +8,8 @@
 
   --font-sm: 0.875rem; /* 14px */
   --font-med: 1.125rem; /* 18px */
-  --font-lrg: 2.5rem; /* 40px */
+  --font-lrg: 1.625rem; /* 26px */
+  --font-xl: 2.5rem; /* 40px */
   --font-super: 3rem; /* 48px */
 }
 
@@ -37,20 +38,21 @@ body {
 h1 {
   font-family: "Amatic SC", Helvetica, sans-serif;
   font-size: var(--font-super);
+  line-height: 3rem;
+  text-align: center;
 }
 
 h2 {
   font-family: "Amatic SC", Helvetica, sans-serif;
-  font-size: var(--font-lrg);
+  font-size: var(--font-xl);
 }
 
 h4 {
   font-weight: 400;
 }
 
-.accent-text {
-  font-family: "Amatic SC", Helvetica, sans-serif;
-  font-size: var(--font-lrg);
+h6 {
+  line-height: 1rem;
 }
 
 a, a:visited, a:hover {
@@ -61,16 +63,16 @@ a:not(.button-cta), a:visited:not(.button-cta), a:hover:not(.button-cta) {
   color: var(--white);
 }
 
-.flex {
-  display: flex;
+hr {
+  width: 80%;
+  height: 1.25px;
+  border: 0;
+  border-radius: 100px;
+  background-color: var(--white);
 }
 
-.flex-jc-fe {
-  justify-content: flex-end;
-}
-
-.flex-ai-c {
-  align-items: center;
+input, button {
+  font-family: inherit;
 }
 
 /* ========== NAV BAR ========== */
@@ -81,7 +83,10 @@ nav {
   width: 100%;
   padding: 12px;
   background-color: var(--barbie-pink);
-  box-shadow: 0 0 0.5em var(--bistre);
+  box-shadow: 0 0 0.5em 0 var(--bistre);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .nav-link {
@@ -145,7 +150,6 @@ nav {
   position: relative;
   top: 69.313px;
   width: 100%;
-  height: 100vh;
   background: url("/images/bio-accent.jpeg");
   background-size: cover;
   overflow: hidden;
@@ -160,7 +164,6 @@ nav {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 100vh;
   clip-path: circle(13.5vw at 50% 50%);
   transition: clip-path .5s ease-in-out;
 }
@@ -173,17 +176,6 @@ nav {
   line-height: 1.5;
 }
 
-.bio-left h1 {
-  text-align: center;
-}
-
-.bio-left hr {
-  width: 80%;
-  height: 1.25px;
-  border: 0;
-  background-color: var(--white);
-}
-
 .bio-logo {
   background: url("./images/logo.jpeg") no-repeat center;
   background-size: 100%;
@@ -194,7 +186,7 @@ nav {
   background: url("./images/portrait.jpeg") no-repeat center;
   background-size: cover;
   width: 36%;
-  box-shadow: 4rem 0 3rem var(--barbie-pink) inset;
+  box-shadow: 4rem 0 3rem 0 var(--barbie-pink) inset;
 }
 
 .mobile-bio {
@@ -210,17 +202,6 @@ nav {
   padding: 2rem;
 }
 
-.mobile-bio h1 {
-  text-align: center;
-}
-
-.mobile-bio hr {
-  width: 80%;
-  height: 1.25px;
-  border: 0;
-  background-color: var(--white);
-}
-
 /* ========== GALLERY ========== */
 
 .gallery {
@@ -231,20 +212,17 @@ nav {
 }
 
 span#gallery {
-  position:absolute;
-  top: -69.313px;
+  position: absolute;
+  top: -68px;
 }
 
 .gallery h1 {
   color: var(--bistre);
-  text-align: center;
   line-height: 0;
 }
 
 .gallery hr {
   width: 40%;
-  height: 1.25px;
-  border: 0;
   background-color: var(--bistre);
 }
 
@@ -294,43 +272,169 @@ span#gallery {
   padding-right: 1rem;
 }
 
-/* ========== VIDEO SECTION ========== */
-
-.video-section {
-  position: relative;
-  top: 69.313px;
-  height: 100vh;
-  display: flexbox;
-  justify-content: center;
-  align-items: center;
-}
-
-.video-container {
-  background-color: var(--pastel-pink);
-  padding: 1em;
-  margin: 10vh 20vw;
-}
-
-iframe {
-  width: 100%;
-}
-
 /* ========== SOCIAL SECTION ========== */
 
 .social-section {
   position: relative;
   top: 69.313px;
+  background-color: var(--barbie-pink);
+  margin: 10vh auto;
+  width: 90vw;
+  max-width: 68.75rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  border: var(--white) 1.5px solid;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+span#social {
+  position: absolute;
+  top: calc(-69.313px - 10vh);
+}
+
+.social-section h1 {
+  width: 100%;
+  margin: 1rem auto 0;
+}
+
+.social-section hr {
+  width: 40%;
+}
+
+.social-text {
+  padding: 1rem 2rem 0 2rem;
+  flex: 1.2;
+  min-width: 330px;
+}
+
+.fa {
+  font-size: 3rem;
+  padding: 0.15rem;
+  text-decoration: none;
+  margin-bottom: 0.5em;
+}
+
+.fa:hover {
+  position: relative;
+  font-size: 3.2rem;
+  padding: 0rem;
+}
+
+.video-desktop {
+  border: var(--pastel-pink) 1rem solid;
+  border-radius: 1rem;
+  flex: 1.8;
+  align-self: center;
+  min-width: 380px;
+}
+
+.social-section-mobile {
+  position: relative;
+  top: 69.313px;
+  width: 100%;
+  background-color: rgba(223, 134, 152, 0.8);
+  text-align: center;
+  line-height: 1.1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 1rem 0;
+}
+
+.social-section-mobile h1 {
+  margin: 2.5rem auto 1rem;
+}
+
+.social-section-mobile a {
+  margin-bottom: 0rem;
+}
+
+.social-text-mobile p {
+  padding: 1rem;
+}
+
+.video-mobile {
+  width: 100%;
+}
+
+/* ========== CONTACT SECTION ========== */
+
+.contact-section {
+  position: relative;
+  top: 69.313px;
+  background-color: var(--bistre);
+  padding: 5rem 0;
+  text-align: center;
+}
+
+span#contact {
+  position: absolute;
+  top: calc(-69.313px - 10vh);
+}
+
+.contact-section label {
+  font-size: var(--font-lrg);
+  color: var(--pastel-pink);
+  font-weight: 600;
+}
+
+.contact-section label span {
+  font-family: "Amatic SC", Helvetica, sans-serif;
+  font-size: var(--font-xl);
+}
+
+.contact-section input {
+  display: block;
+  margin: 1rem auto;
+  width: 80vw;
+  max-width: 32rem;
+  height: 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+}
+
+.contact-section input:focus {
+  outline: 0;
+  box-shadow: 0 0 6px 0 var(--pastel-pink);
 }
 
 /* ========== RESPONSIVENESS ========== */
 
-@media (max-width: 48em) {
+footer {
+  position: relative;
+  top: 69.313px;
+  background-color: var(--pastel-pink);
+  padding: 0.5rem 0;
+  color: var(--bistre);
+  text-align: center;
+}
+
+/* ========== RESPONSIVENESS ========== */
+
+@media screen and (max-width: 48em) {
   .hide-for-mobile {
     display: none;
   }
+
+  .contact-section label {
+    font-size: var(--font-med);
+    font-weight: 600;
+  }
+
+  .contact-section label span {
+    font-size: var(--font-lrg);
+  }
+
+  .contact-section input {
+    height: 2rem;
+  }
 }
 
-@media (min-width: 48em) {
+@media screen and (min-width: 48em) {
   .hide-for-desktop {
     display: none;
   }
