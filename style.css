@@ -32,7 +32,7 @@ body {
   font-family: "Montserrat", Helvetica, sans-serif;
   font-weight: 400;
   color: var(--white);
-  background: url("../images/logo-pattern.png") repeat fixed;
+  background: url("./images/logo-pattern.png") repeat fixed;
 }
 
 body.no-scroll {
@@ -247,7 +247,7 @@ nav {
   position: relative;
   top: 69.313px;
   width: 100%;
-  background: url("/images/bio-accent.jpeg");
+  background: url("./images/bio-accent.jpeg");
   background-size: cover;
   overflow: hidden;
 }
