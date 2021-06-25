@@ -18,7 +18,7 @@
 
 <body>
     <header id="header" class="header">
-        <div class="overlay"></div>
+        <div class="overlay fade"></div>
 
         <!---------- NAV BAR ---------->
 
@@ -28,7 +28,7 @@
             </a>
 
 
-            <a href="#" id ="hamburger" class="header-menu hide-for-desktop">
+            <a href="#" id ="hamburger" class="header-toggle hide-for-desktop">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -42,6 +42,13 @@
 
             <a href="#contact" class="nav-link button-cta hide-for-mobile">Contact</a>
         </nav>
+
+        <div class="header-menu fade">
+            <a href="#" class="menu-link">Bio</a>
+            <a href="#gallery" class="menu-link">Gallery</a>
+            <a href="#social" class="menu-link">Social</a>
+            <a href="#contact" class="menu-link">Contact</a>
+        </div>
     </header>
 
     <!---------- BIO ---------->
@@ -155,18 +162,19 @@
     <section class="contact-section"><span id="contact"></span>
         <form>
             <label for="email">Subscribe to the<span> MACRA.ME </span>email feed!<input type="email" name="email" id="email" placeholder="Your email"></label>
+            <input type="submit" class="submit-btn">
         </form>
     </section>
 
     <footer>
-        <h6>&copy; Web Design by <a target="_blank" href="https://github.com/nunoserodio">Nuno</a>
+        <h6>&copy; Web design by <a target="_blank" href="https://github.com/nunoserodio">Nuno</a>
         <br>
         &copy; Product by Joana Jacinto
         <br>
-        &copy; Logo Design by Nuno Coelho</h6>
+        &copy; Logo design by Nuno Coelho</h6>
     </footer>
 
-    <!-- To load JavaScript file.
-    <script src="app/js/script.js"></script> -->
+    <!-- To load JavaScript file. -->
+    <script src="app/js/script.js"></script>
 </body>
 </html>
