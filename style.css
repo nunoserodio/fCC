@@ -389,7 +389,7 @@ span#gallery {
 
 span#social {
   position: absolute;
-  top: calc(-69.313px - 10vh);
+  top: 68px;
 }
 
 .social-section h1 {
@@ -436,6 +436,11 @@ span#social {
   justify-content: center;
   align-items: center;
   padding: 0 0 1rem 0;
+}
+
+span#social2 {
+  position: absolute;
+  top: -68px;
 }
 
 .social-section-mobile h1 {

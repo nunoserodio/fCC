@@ -4,23 +4,35 @@ const header = document.querySelector('.header');
 const fadeObjs = document.querySelectorAll('.fade');
 const menuBtn = document.querySelectorAll('.menu-link');
 
-hamburger.addEventListener('click', function(){
-    console.log('click hamburger');
-
+function toggleHeader() {
     if(header.classList.contains('open')){ // Close Hamburger Menu
-        body.classList.remove('no-scroll');
-        header.classList.remove('open');
-        fadeObjs.forEach(function(element){
-            element.classList.remove('fade-in');
-            element.classList.add('fade-out');
-        });
+      body.classList.remove('no-scroll');
+      header.classList.remove('open');
+      fadeObjs.forEach(function(element){
+        element.classList.remove('fade-in');
+        element.classList.add('fade-out');
+      });
     }
     else { // Open Hamgurger Menu
-        body.classList.add('no-scroll');
-        header.classList.add('open');
-        fadeObjs.forEach(function(element){
-            element.classList.remove('fade-out');
-            element.classList.add('fade-in');
-        });
+      body.classList.add('no-scroll');
+      header.classList.add('open');
+      fadeObjs.forEach(function(element){
+        element.classList.remove('fade-out');
+        element.classList.add('fade-in');
+      });
     }
+}
+
+hamburger.addEventListener('click', function(){
+  console.log('click hamburger');
+
+  toggleHeader()
+});
+
+menuBtn.forEach(button => {
+  button.addEventListener('click', function(){
+    console.log('click menu button');
+
+    toggleHeader()
+  })
 });
