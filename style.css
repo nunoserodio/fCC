@@ -193,7 +193,7 @@ nav {
 }
 
 .fade-in {
-  animation: fade-in 100ms ease-in-out forwards;
+  animation: fade-in 150ms ease-in-out forwards;
 }
 
 @keyframes fade-out {
@@ -214,7 +214,7 @@ nav {
 }
 
 .fade-out {
-  animation: fade-out 100ms ease-in-out forwards;
+  animation: fade-out 150ms ease-in-out forwards;
 }
 
 .header-menu {

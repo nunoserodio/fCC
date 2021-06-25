@@ -1,8 +1,8 @@
 const hamburger = document.querySelector('#hamburger');
 const body = document.querySelector('body');
 const header = document.querySelector('.header');
-const overlay = document.querySelector('.overlay');
 const fadeObjs = document.querySelectorAll('.fade');
+const menuBtn = document.querySelectorAll('.menu-link');
 
 hamburger.addEventListener('click', function(){
     console.log('click hamburger');
