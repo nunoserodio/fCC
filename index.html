@@ -34,7 +34,7 @@
             </a>
 
             <div class="header-links hide-for-mobile">
-                <a href="#" class="nav-link">Bio</a>
+                <a href="#bio" class="nav-link">Bio</a>
                 <a href="#gallery" class="nav-link">Gallery</a>
                 <a href="#social" class="nav-link">Social</a>
             </div>
@@ -43,7 +43,7 @@
         </nav>
 
         <div class="header-menu fade">
-            <a href="#" class="menu-link">Bio</a>
+            <a href="#bio" class="menu-link">Bio</a>
             <a href="#gallery" class="menu-link">Gallery</a>
             <a href="#social2" class="menu-link">Social</a>
             <a href="#contact" class="menu-link">Contact</a>
@@ -52,7 +52,7 @@
 
     <!---------- BIO ---------->
 
-    <div id="bio" class="bio">
+    <div class="bio"><span id="bio"></span>
         <div class="bio-container hide-for-mobile">
             <div class="bio-left">
                 <h1>Tangled with love...</h1>
@@ -153,15 +153,15 @@
             <br>
         </div>
 
-        <iframe class="video-mobile" width="560" height="315" src="https://www.youtube.com/embed/yJBlr9JOFzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe id="video" class="video-mobile" width="560" height="315" src="https://www.youtube.com/embed/yJBlr9JOFzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
     <!---------- CONTACT SECTION ---------->
 
     <section class="contact-section"><span id="contact"></span>
-        <form>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
             <label for="email">Subscribe to the<span> MACRA.ME </span>email feed!<input type="email" name="email" id="email" placeholder="Your email"></label>
-            <input type="submit" class="submit-btn">
+            <input type="submit" id="submit" class="submit-btn">
         </form>
     </section>
 

@@ -79,6 +79,21 @@ input, button {
   font-family: inherit;
 }
 
+span#bio, span#contact {
+  position: absolute;
+  top: -69.313px;
+}
+
+span#gallery, span#social2 {
+  position: absolute;
+  top: -68px;
+}
+
+span#social {
+  position: absolute;
+  top: calc(-69.313px - 10vh);
+}
+
 /* ========== NAV BAR ========== */
 
 nav {
@@ -252,10 +267,6 @@ nav {
   overflow: hidden;
 }
 
-.bio-container:hover {
-  clip-path: circle(75%);
-}
-
 .bio-container {
   background-color: var(--barbie-pink);
   display: flex;
@@ -263,6 +274,10 @@ nav {
   width: 100%;
   clip-path: circle(13.5vw at 50% 50%);
   transition: clip-path .5s ease-in-out;
+}
+
+.bio-container:hover {
+  clip-path: circle(75%);
 }
 
 .bio-left {
@@ -306,11 +321,6 @@ nav {
   top: 69.313px;
   background-color: var(--white);
   padding: 2rem 10%;
-}
-
-span#gallery {
-  position: absolute;
-  top: -68px;
 }
 
 .gallery h1 {
@@ -387,11 +397,6 @@ span#gallery {
   align-items: center;
 }
 
-span#social {
-  position: absolute;
-  top: 68px;
-}
-
 .social-section h1 {
   width: 100%;
   margin: 1rem auto 0;
@@ -438,11 +443,6 @@ span#social {
   padding: 0 0 1rem 0;
 }
 
-span#social2 {
-  position: absolute;
-  top: -68px;
-}
-
 .social-section-mobile h1 {
   margin: 2.5rem auto 1rem;
 }
@@ -463,11 +463,6 @@ span#social2 {
   background-color: var(--bistre);
   padding: 5rem 0;
   text-align: center;
-}
-
-span#contact {
-  position: absolute;
-  top: -69.313px;
 }
 
 .contact-section label {
